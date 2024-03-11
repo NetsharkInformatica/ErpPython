@@ -12,8 +12,13 @@ mycursor=mydb.cursor()
 mycursor.execute('SELECT * FROM Cliente')
 myresult=mycursor.fetchall()
 
-for line in myresult:
-   print('line:', line)
 
+#deletar
+print('deletar cliente?')
+sql="DELETE FROM Cliente WHERE IdCliente='3'"
+mycursor.execute(sql)
+mydb.commit()
 
-    
+print('-x-' * 30)
+
+print(mycursor.rowcount,'registros deletados')
