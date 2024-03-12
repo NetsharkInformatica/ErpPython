@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1131</width>
+    <height>248</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>271</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/logo_empresa/icons/logo_empresa.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/icons/logo_empresa.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCadastros">
+    <property name="title">
+     <string>Cadastros</string>
+    </property>
+    <addaction name="actionCliente"/>
+    <addaction name="actionFornecedor"/>
+    <addaction name="actionUsuario"/>
+   </widget>
+   <widget class="QMenu" name="menuOperacoes">
+    <property name="title">
+     <string>Operacoes</string>
+    </property>
+    <widget class="QMenu" name="menuSaida_de_Produtos">
+     <property name="title">
+      <string>Saida de Produtos</string>
+     </property>
+     <addaction name="actionVenda"/>
+     <addaction name="actionConsumo_de_Produtos"/>
+    </widget>
+    <widget class="QMenu" name="menuEstoque">
+     <property name="title">
+      <string>Estoque</string>
+     </property>
+     <addaction name="actionSaldo"/>
+    </widget>
+    <widget class="QMenu" name="menuCompras">
+     <property name="title">
+      <string>Compras</string>
+     </property>
+     <addaction name="actionCompras_2"/>
+     <addaction name="actionPedido_de_Compra"/>
+     <addaction name="actionCancelamento_de_compra"/>
+    </widget>
+    <addaction name="menuSaida_de_Produtos"/>
+    <addaction name="menuEstoque"/>
+    <addaction name="menuCompras"/>
+   </widget>
+   <widget class="QMenu" name="menuFinanceiro">
+    <property name="title">
+     <string>Financeiro</string>
+    </property>
+    <addaction name="actioncaixa"/>
+    <addaction name="actionContas_Bancos"/>
+    <addaction name="actionContas_apagar"/>
+    <addaction name="actionContas_recebidas"/>
+    <addaction name="actionContas_Pagas"/>
+   </widget>
+   <widget class="QMenu" name="menuConsultas">
+    <property name="title">
+     <string>Consultas</string>
+    </property>
+    <widget class="QMenu" name="menuVendas">
+     <property name="title">
+      <string>Vendas</string>
+     </property>
+     <addaction name="actionGeral_2"/>
+     <addaction name="actionResumido"/>
+    </widget>
+    <widget class="QMenu" name="menuConsumo">
+     <property name="title">
+      <string>Consumo</string>
+     </property>
+     <addaction name="actionGeral_3"/>
+     <addaction name="actionResumido_2"/>
+    </widget>
+    <addaction name="menuVendas"/>
+    <addaction name="menuConsumo"/>
+   </widget>
+   <addaction name="menuCadastros"/>
+   <addaction name="menuOperacoes"/>
+   <addaction name="menuFinanceiro"/>
+   <addaction name="menuConsultas"/>
+  </widget>
+  <action name="actionVenda">
+   <property name="text">
+    <string>Venda</string>
+   </property>
+  </action>
+  <action name="actionConsumo_de_Produtos">
+   <property name="text">
+    <string>Consumo de Produtos</string>
+   </property>
+  </action>
+  <action name="actionSaldo">
+   <property name="text">
+    <string>Saldo</string>
+   </property>
+  </action>
+  <action name="actionCompras_2">
+   <property name="text">
+    <string>Compras</string>
+   </property>
+  </action>
+  <action name="actionPedido_de_Compra">
+   <property name="text">
+    <string>Pedido de Compra</string>
+   </property>
+  </action>
+  <action name="actionCliente">
+   <property name="text">
+    <string>Cliente</string>
+   </property>
+  </action>
+  <action name="actionCancelamento_de_compra">
+   <property name="text">
+    <string>Cancelamento de compra</string>
+   </property>
+  </action>
+  <action name="actioncaixa">
+   <property name="text">
+    <string>caixa</string>
+   </property>
+  </action>
+  <action name="actionContas_Bancos">
+   <property name="text">
+    <string>Contas Bancos</string>
+   </property>
+  </action>
+  <action name="actionContas_apagar">
+   <property name="text">
+    <string>Contas apagar</string>
+   </property>
+  </action>
+  <action name="actionContas_recebidas">
+   <property name="text">
+    <string>Contas recebidas</string>
+   </property>
+  </action>
+  <action name="actionContas_Pagas">
+   <property name="text">
+    <string>Contas Pagas</string>
+   </property>
+  </action>
+  <action name="actionGeral">
+   <property name="text">
+    <string>Geral</string>
+   </property>
+  </action>
+  <action name="actionResumida">
+   <property name="text">
+    <string>Resumida</string>
+   </property>
+  </action>
+  <action name="actionFornecedor">
+   <property name="text">
+    <string>Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionUsuario">
+   <property name="text">
+    <string>Usuario</string>
+   </property>
+  </action>
+  <action name="actionGeral_2">
+   <property name="text">
+    <string>Geral</string>
+   </property>
+  </action>
+  <action name="actionResumido">
+   <property name="text">
+    <string>Resumido</string>
+   </property>
+  </action>
+  <action name="actionGeral_3">
+   <property name="text">
+    <string>Geral</string>
+   </property>
+  </action>
+  <action name="actionResumido_2">
+   <property name="text">
+    <string>Resumido</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons/logo_empresa.qrc"/>
+ </resources>
+ <connections/>
+</ui>
